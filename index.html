@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Employees</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./dist/index-home.css">
 </head>
+
 <body>
-    <h1>hi</h1>
+    <nav class="navbar--container">
+        <h1 class="navbar__header">
+            EmployeesCo
+        </h1>
+    </nav>
+
+    <div class="main--container">
+        <div class="main__controls data--container">
+            <h3 class="controls__search-text">Search</h3>
+            <form>
+                <input class="controls__search-input" type="text">
+            </form>
+
+            <h3 class="controls__dropdown-text">Department</h3>
+            <form>
+                <select class="controls__dropdown-menu">
+                </select>
+            </form>
+        </div>
+        <div class="main__data data--container">
+
+        </div>
+    </div>
+
     <script src="./dist/main.js"></script>
 </body>
+
 </html>
