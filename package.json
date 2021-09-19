@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx webpack && sass --watch ./src/styles/index-home.scss:./dist/index-home.css & nodemon ./server.js"
+    "dev": "npx webpack && (sass --watch ./src/styles/index-home.scss:./dist/index-home.css & nodemon ./server.js)"
   },
   "keywords": [],
   "author": "",

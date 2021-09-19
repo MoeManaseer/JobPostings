@@ -1,0 +1,90 @@
+.employees__controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.controls__department,
+.controls__search {
+    display: flex;
+    align-items: baseline;
+}
+
+.controls__search-text,
+.controls__dropdown-text {
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.controls__search-input,
+.controls__dropdown-menu {
+    font-family: $font-loto;
+    font-size: 12px;
+}
+
+.controls__department form {
+    width: 163px;
+    height: 21px;
+}
+
+.controls__dropdown-menu {
+    width: 100%;
+    padding: 1px 2px;
+    height: 100%;
+}
+
+.employees__load-more {
+    display: flex;
+    justify-content: center;
+}
+
+.employees__load-more-button {
+    border-radius: 25px;
+    padding: 10px 100px;
+    background-color: white;
+    border: solid 2px #212529;
+    font-size: 14px;
+    color: black;
+    cursor: pointer;
+    margin-top: 16px;
+
+    &--disabled {
+        display: none;
+    }
+
+    &--enabled {
+        display: block;
+    }
+}
+
+@media only screen and (max-width : $small-tablet-breakpoint) {
+    .employees__controls {
+        flex-direction: column;
+    }
+
+    .controls__department {
+        margin-top: 10px;
+    }
+    
+    .controls__department,
+    .controls__search {
+        width: 100%;
+        justify-content: space-between;
+    }
+} 
+
+@media only screen and (max-width : $mobile-breakpoint) {
+    .controls__search-text,
+    .controls__dropdown-text {
+        font-size: 15px;
+    }
+
+    .controls__search-input,
+    .controls__dropdown-menu {
+        font-size: 12px;
+    }
+
+    .employees__load-more-button {
+        padding: 6px 40px;
+    }
+}

@@ -1,7 +1,9 @@
 .navbar--container {
-    padding: 10px 20px;
-    background-color: $black;
+    padding: 10px 5%;
+    background-color: $grey-border;
     position: fixed;
+    width: 100%;
+    z-index: 20;
 }
 
 .navbar__header {

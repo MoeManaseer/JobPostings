@@ -22,20 +22,34 @@
     </nav>
 
     <div class="main--container">
-        <div class="main__controls data--container">
-            <h3 class="controls__search-text">Search</h3>
-            <form>
-                <input class="controls__search-input" type="text">
-            </form>
-
-            <h3 class="controls__dropdown-text">Department</h3>
-            <form>
-                <select class="controls__dropdown-menu">
-                </select>
-            </form>
+        <div class="employees__controls data--container">
+            <div class="controls__search">
+                <h3 class="controls__search-text">Search</h3>
+                <form>
+                    <input class="controls__search-input" type="text">
+                </form>
+            </div>
+            
+            <div class="controls__department">
+                <h3 class="controls__dropdown-text">Department</h3>
+                <form>
+                    <select class="controls__dropdown-menu">
+                        <option value="">Select One …</option>
+                        <option value="IT">IT</option>
+                        <option value="HR">HR</option>
+                        <option value="Accountent">Accountent</option>
+                        <option value="Engineer">Engineer</option>
+                    </select>
+                </form>
+            </div>
         </div>
-        <div class="main__data data--container">
 
+        <div class="employees__container data--container">
+        </div>
+        <div class="employees__load-more">
+            <button class="employees__load-more-button employees__load-more-button--enabled">
+                Load
+            </button>
         </div>
     </div>
 

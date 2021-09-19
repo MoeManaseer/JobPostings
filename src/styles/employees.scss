@@ -1,0 +1,72 @@
+.employees__container--empty::after {
+    content: $empty-message;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    border: solid 1px $grey-border;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.employee__wrapper--hidden.employee__wrapper {
+    display: none;
+}
+
+.employee__wrapper {
+    display: flex;
+    margin-top: 16px;
+    border: solid 1px $grey-border;
+    border-radius: 25px;
+    background-color: $grey-border;
+    padding: 8px;
+}
+
+.employee__warpper--inner {
+    display: flex;
+    width: 100%;
+    padding: 16px;
+    border-radius: 25px;
+    color: $white;
+}
+
+.image__wrapper {
+    margin-right: 16px;
+    position: relative;
+    padding: 0 18% 15% 0;
+}
+
+.employee__image {
+    border-radius: 25px;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.employee__data--wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width : $mobile-breakpoint) {
+    .employee__wrapper {
+        padding: 4px;
+    }
+
+    .employee__warpper--inner {
+        padding: 12px;
+    }
+
+    .employee__name,
+    .employee__gender,
+    .employee__department {
+        font-size: 12px;
+    }
+
+    .image__wrapper {
+        padding: 0 20% 20% 0;
+    }
+}
+
+
